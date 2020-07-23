@@ -1,0 +1,1 @@
+$env:GOOGLE_APPLICATION_CREDENTIALS="E:\2020\2020_ProyectosAlfa\7_Proyectos\2020-6-WEBSITE\4_1_WEB_NODEJS_FIREBASE\nodejs-firebase-example-master\nodejs-firebase-example-master\src\firebase\alfadb01-firebase-adminsdk-chmze-2a68cb5f9b.json"
