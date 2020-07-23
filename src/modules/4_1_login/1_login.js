@@ -11,7 +11,7 @@ const firebaselogin = require('./4_firebaselogin');
 
 
 //°°°°°°°°°°  INDEX  °°°°°°°°°°//
-router.get('/Home', async (req,res) =>{
+router.get('/login', async (req,res) =>{
     //vista
     res.render('index');
 });
