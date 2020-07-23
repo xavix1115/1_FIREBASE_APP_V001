@@ -3,7 +3,7 @@ const db = require('../0_1_general/1_firebaseconnection');
 
 
 
-//°°°°°°°°°°   Funciones   °°°°°°°°°°°//
+//°°°°°°°°°°   Nuevo usuario  °°°°°°°°°°°//
 module.exports.nuevousuario = async (datos) =>{
     //firebase guarda los datos
     const res = await db.collection('test1').add({
@@ -16,7 +16,7 @@ module.exports.nuevousuario = async (datos) =>{
 }
 
 
-//°°°°°°°° Mensaje Bienvenida °°°°°°°°//
+//°°°°°°°° Listar datos °°°°°°°°//
 module.exports.listardatos1 = async () => {
     var dattos = [];
     var data = [];
@@ -42,7 +42,7 @@ module.exports.listardatos1 = async () => {
 }
 
 
-
+//°°°°°°°° Borrar datos °°°°°°°°//
 module.exports.borrardato = async (id) =>{
     await db.collection('test1').doc(id).delete();
     console.log("eliminado");
@@ -51,4 +51,4 @@ module.exports.borrardato = async (id) =>{
 
 
 //°°°°°°°° Mensaje Bienvenida °°°°°°°°//
-console.log("Firebase user inicializada");
+console.log("Firebase user inicializada2");
