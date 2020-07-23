@@ -71,6 +71,7 @@
     "./typescript/app.ts",
     "./typescript/hola.ts",
     "./typescript/hola3.ts",
-    "typescript/carpeta1/adentrodecarpeta.ts"
+    "./typescript/carpeta1/adentrodecarpeta.ts",
+    "./typescript/carpeta1/*"
   ]
 }
