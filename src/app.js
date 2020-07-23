@@ -30,5 +30,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°//
-//°°°°°°°°°° EXPORTAR °°°°°°°°°°//
+//°°°°°°°°°° EXPORTAR1 °°°°°°°°°°//
 module.exports = app;
