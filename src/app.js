@@ -22,6 +22,7 @@ app.use(express.urlencoded({extended: false}));
 
 //°°°°°°°°°°   ROUTES    °°°°°°°°°°//
 app.use(require('./modules/1_1_index/1_index'));
+app.use(require('./modules/4_1_login/1_login'));
 
 
 //°°°°°°°°°° STATIC FILES °°°°°°°°°°//

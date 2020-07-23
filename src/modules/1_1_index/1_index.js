@@ -5,6 +5,10 @@ const router = require('../0_1_general/0_router');
 const firebaseusers = require('./4_firebaseindex');
 
 
+//°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°//
+//°°°°°°°°°°  ROUTERS  °°°°°°°°°°//
+
+
 
 //°°°°°°°°°°  INDEX  °°°°°°°°°°//
 router.get('/', async (req,res) =>{
@@ -45,6 +49,6 @@ router.get('/delete-contact/:id', async (req,res) =>{
 
 
 
-
+//°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°//
 //°°°°°°°°°°  EXPORTAR - APP.JS  °°°°°°°°°°//
 module.exports = router;
