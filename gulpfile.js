@@ -3,8 +3,8 @@ var gulp = require('gulp');
 var del = require('del');
 
 //RUTAS
-const carpetaorigen ="typescript/views/";
-const carpetadestino = "project_to_upload/views/";
+const carpetaorigen ="typescript/views/views/";
+const carpetadestino = "project_to_upload/views/views/";
 
 
 
