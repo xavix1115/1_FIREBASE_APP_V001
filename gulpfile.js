@@ -3,9 +3,14 @@ var gulp = require('gulp');
 var del = require('del');
 
 //RUTAS
-const origen = "carpeta1/**/*";
-const destino = "carpeta2/";
-const borrar = "carpeta2/**";
+const carpetaorigen ="carpeta1/";
+const carpetadestino = "carpeta2/";
+
+
+
+const origen = carpetaorigen + "**/*";
+const destino = carpetadestino;
+const borrar = carpetadestino + "**";
 
 
 
