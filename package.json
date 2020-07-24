@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon  src/index.js",
-    "serv": "nodemon  src/index.js"
+    "serv": "nodemon  typescriptJS/index.js"
   },
   "keywords": [],
   "author": "",
