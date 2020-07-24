@@ -8,7 +8,7 @@ var morgan = require('morgan');
 var app = express();
 exports.app = app;
 app.set('port', process.env.PORT || 4000);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views1/views'));
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs'
@@ -21,6 +21,6 @@ app.get('/bienvenidos', function (req, res) {
 });
 app.use(require('./modules/1_1_index/1_index'));
 app.use(require('./modules/4_1_login/1_login'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'views1/public')));
 module.exports = app;
 console.log('app.js funcionando');
