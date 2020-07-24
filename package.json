@@ -17,6 +17,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
     "nodemon": "^2.0.4"
   }
 }
