@@ -25,7 +25,7 @@ EL PROYECTO PARA MODIFICAR ESTA EN LA CARPETA "typescript"
 4) inicializar servidor express
     //sirve para funcionar en el local host puerto 4000
     -abre otro cmd diferente
-    -escribe: "npm run serv"
+    -escribe: "npm run servidor"
     -las configuraciones estan en package.json
 
 
