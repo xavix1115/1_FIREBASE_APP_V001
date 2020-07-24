@@ -7,7 +7,7 @@ let app = express();
 
 //°°°°°°°°°°  SETTINGS   °°°°°°°°°°//
 app.set('port', process.env.PORT || 4000);
-app.set('views', path.join(__dirname, 'views1/views'));
+app.set('views', path.join(__dirname, 'views/views'));
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs'
@@ -31,7 +31,7 @@ app.use(require('./modules/4_1_login/1_login'));
 
 
 //°°°°°°°°°° STATIC FILES °°°°°°°°°°//
-app.use(express.static(path.join(__dirname, 'views1/public')));
+app.use(express.static(path.join(__dirname, 'views/public')));
 
 
 
