@@ -6,3 +6,4 @@ admin.initializeApp({
 let db = admin.firestore();
 //Exportar
 export {db};
+module.exports = db;

@@ -35,13 +35,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var _1_firebaseconnection_1 = require("../0_1_general/1_firebaseconnection");
+var db = require('../0_1_general/1_firebaseconnection');
 module.exports.nuevousuario = function (datos) { return __awaiter(void 0, void 0, void 0, function () {
     var res;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, _1_firebaseconnection_1.db.collection('test1').add({
+            case 0: return [4, db.collection('test1').add({
                     Nombres: datos.Nombre,
                     Apellidos: datos.Apellidos,
                     Email: datos.Email,
@@ -60,7 +59,7 @@ module.exports.listardatos1 = function () { return __awaiter(void 0, void 0, voi
         switch (_a.label) {
             case 0:
                 data = [];
-                return [4, _1_firebaseconnection_1.db.collection('test1').get()
+                return [4, db.collection('test1').get()
                         .then(function (snapshot) {
                         snapshot.forEach(function (doc) {
                             dattos = {
@@ -82,7 +81,7 @@ module.exports.listardatos1 = function () { return __awaiter(void 0, void 0, voi
 module.exports.borrardato = function (id) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, _1_firebaseconnection_1.db.collection('test1').doc(id).delete()];
+            case 0: return [4, db.collection('test1').doc(id).delete()];
             case 1:
                 _a.sent();
                 console.log("eliminado");
@@ -90,4 +89,4 @@ module.exports.borrardato = function (id) { return __awaiter(void 0, void 0, voi
         }
     });
 }); };
-console.log("Firebase user inicializada2");
+console.log("Firebase Index iniciada");

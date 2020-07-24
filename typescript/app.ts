@@ -28,8 +28,7 @@ app.get('/bienvenidos', function(req:any, res:any){
 
 
 app.use(require('./modules/1_1_index/1_index'));
-//app.use(require('./modules/1_1_index/1_index'));
-//app.use(require('./modules/4_1_login/1_login'));
+app.use(require('./modules/4_1_login/1_login'));
 
 
 

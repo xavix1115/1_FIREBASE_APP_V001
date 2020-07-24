@@ -1,5 +1,4 @@
 //Router
-//import { router } from '../0_1_general/0_router';
 const router = require('../0_1_general/0_router');
 // Firebase new user
 const firebaseusers = require('./4_firebaseindex');

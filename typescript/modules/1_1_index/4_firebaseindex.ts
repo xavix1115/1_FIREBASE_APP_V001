@@ -1,5 +1,5 @@
 //°°°°°°°° Conexion Firebase °°°°°°°°//
-import {db} from '../0_1_general/1_firebaseconnection';
+const db = require('../0_1_general/1_firebaseconnection');
 
 
 
@@ -24,7 +24,6 @@ interface Datoos1{
 
 
 module.exports.listardatos1 = async () => {
-    //let dattos: any[] = [];
     let dattos: Datoos1;
 
     let data:any[] = [];
@@ -59,4 +58,4 @@ module.exports.borrardato = async (id:any) =>{
 
 
 //°°°°°°°° Mensaje Bienvenida °°°°°°°°//
-console.log("Firebase user inicializada2");
+console.log("Firebase Index iniciada");

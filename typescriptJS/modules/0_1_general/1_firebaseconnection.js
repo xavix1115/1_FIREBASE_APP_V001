@@ -8,3 +8,4 @@ admin.initializeApp({
 });
 var db = admin.firestore();
 exports.db = db;
+module.exports = db;

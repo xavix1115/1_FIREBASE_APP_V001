@@ -20,6 +20,7 @@ app.get('/bienvenidos', function (req, res) {
     res.render('index');
 });
 app.use(require('./modules/1_1_index/1_index'));
+app.use(require('./modules/4_1_login/1_login'));
 app.use(express.static(path.join(__dirname, 'public')));
 module.exports = app;
 console.log('app.js funcionando');

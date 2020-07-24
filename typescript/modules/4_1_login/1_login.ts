@@ -24,3 +24,4 @@ router.get('/login', async (req:any,res:any) =>{
 //°°°°°°°°°°  EXPORTAR - APP.JS  °°°°°°°°°°//
 //module.exports = router;
 export {router};
+module.exports = router;

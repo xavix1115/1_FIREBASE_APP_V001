@@ -46,3 +46,4 @@ router.get('/login', function (req, res) { return __awaiter(void 0, void 0, void
         return [2];
     });
 }); });
+module.exports = router;
