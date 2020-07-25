@@ -1,22 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    {{!-- BOOTSTRAP CDN --}}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Admin Mintone">
+<meta name="author" content="Admin Mintone">
+<!-- Favicon icon -->
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/imgs/favicon.png">
+<title>Admin Mintone - Bootstrap 4 Admin Template</title>
+<!-- Bootstrap Core CSS -->
+<link href="/plugins/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/plugins/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+<!-- This page CSS -->
+<!-- chartist CSS -->
+<link href="/plugins/vendors/morrisjs/morris.css" rel="stylesheet">
+<!--c3 CSS -->
+<link href="/plugins/vendors/c3-master/c3.min.css" rel="stylesheet">
+<!--Toaster Popup message CSS -->
+<link href="/plugins/vendors/toast-master/css/jquery.toast.css" rel="stylesheet">
+<!-- Page CSS -->
+<link href="/plugins/vendors/switchery/dist/switchery.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/plugins/vendors/product-slider/product-slider.css">
+<link href="/plugins/vendors/bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet" type="text/css">
+<link href="/plugins/vendors/switchery/dist/switchery.min.css" rel="stylesheet" />
+<link href="/plugins/vendors/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" />
+<link rel="stylesheet" href="/plugins/vendors/dropify/dist/css/dropify.min.css">
+<!-- page css -->
+<link href="/assets/css/pages/file-upload.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="/assets/css/style.css" rel="stylesheet">
+
 </head>
-
-<body>
-    <div class="container p-4">
-        <div class="row">
-            {{{ body }}}
+<body class="fix-header fix-sidebar card-no-border">
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+  <div class="loader">
+    <div class="loader__figure"></div>
+    <p class="loader__label">Admin Mintone</p>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+  <!-- ============================================================== -->
+  <!-- Container1140px -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Topbar header - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <header class="topbar">
+    <div Class="container">
+      <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <!-- ============================================================== -->
+        <!-- Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-header"> <a class="navbar-brand" href="/index.html">
+          <!-- Logo icon -->
+          <b>
+          <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+          <!-- Dark Logo icon -->
+          <img src="/assets/imgs/logo-icon.png" alt="homepage" class="dark-logo" />
+          <!-- Light Logo icon -->
+          <img src="/assets/imgs/logo-light-icon.png" alt="homepage" class="light-logo" /> </b>
+          <!--End Logo icon -->
+          <!-- Logo text -->
+          <span>
+          <!-- dark Logo text -->
+          <img src="/assets/imgs/logo-text.png" alt="homepage" class="dark-logo dark-logo2" />
+          <!-- Light Logo text -->
+          <img src="/assets/imgs/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a> </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+        <div class="top-bar-main">
+          <!-- ============================================================== -->
+          <!-- toggle and nav items -->
+          <!-- ============================================================== -->
+          <div class="float-left">
+            <ul class="navbar-nav">
+              <li class="nav-item "><a class="nav-link navbar-toggler sidebartoggler waves-effect waves-dark float-right" href="/javascript:void(0)"><span class="navbar-toggler-icon"></span></a></li>
+              <!-- ============================================================== -->
+              <!-- Search -->
+              <!-- ============================================================== -->
+              
+            </ul>
+          </div>
+          <!-- ============================================================== -->
+          <!-- User profile and search -->
+          <!-- ============================================================== -->
+          <div class="float-right pr-3">
+            <ul class="navbar-nav my-lg-0 float-right">
+              <!-- ============================================================== -->
+              <!-- Comment -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle waves-effect waves-dark" href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell"></i>
+                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mailbox animated fadeIn">
+                  <ul>
+                    <li>
+                      <div class="drop-title">You have <span class="highlighted">3 new</span> Notifications</div>
+                    </li>
+                    <li>
+                      <div class="message-center">
+                        <!-- Message -->
+                        <a href="/#">
+                        <div class="mail-content"> <i class="fas fa-envelope"></i> 2 new messages <span class="float-right text-light">15:07</span> </div>
+                        </a>
+                        <!-- Message -->
+                        <!-- Message -->
+                        <a href="/#">
+                        <div class="mail-content"> <i class="fas fa-comment"></i> 1 new comment <span class="float-right text-light">11.08.2018</span> </div>
+                        </a>
+                        <!-- Message -->
+                        <a href="/#">
+                        <div class="mail-content"> <i class="fas fa-calendar-alt"></i> 2 Events Soon <span class="float-right text-light">10.08.2018</span> </div>
+                        </a> </div>
+                    </li>
+                    <li> <a class="nav-link text-center" href="/javascript:void(0);">See all notifications </a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- ============================================================== -->
+              <!-- End Comment -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- Messages -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle waves-effect waves-dark" href="/" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
+                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                </a>
+                <div class="dropdown-menu mailbox dropdown-menu-right animated fadeIn" aria-labelledby="2">
+                  <ul>
+                    <li>
+                      <div class="drop-title">You have <span class="highlighted">7 new</span> messages</div>
+                    </li>
+                    <li>
+                      <div class="message-center">
+                        <!-- Message -->
+                        <a href="/#">
+                        <div class="user-img"> <img src="/assets/imgs/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                        <div class="mail-content">
+                          <div class="float-left">
+                            <h5 class="mt-0 text-dark">Amanda Robertson</h5>
+                            <span class="mail-desc text-light mt-1">Guterres was elec...</span> </div>
+                          <span class="float-right text-light text-right">11:18 <span class="clearfix"></span> <span class="label label-rounded label-primary">1</span> </span> </div>
+                        <div class="clearfix"></div>
+                        </a>
+                        <!-- Message -->
+                        <a href="/#">
+                        <div class="user-img"> <img src="/assets/imgs/users/img2.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                        <div class="mail-content">
+                          <div class="float-left">
+                            <h5 class="mt-0 text-dark">Danny Donavan</h5>
+                            <span class="mail-desc text-light mt-1">Guterres was elec...</span></div>
+                          <div class="float-right text-light text-right">09.07.2018 <span class="clearfix"></span> <span class="label label-rounded label-primary">2</span> </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        </a>
+                        <!-- Message -->
+                        <a href="/#">
+                        <div class="user-img"> <img src="/assets/imgs/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                        <div class="mail-content">
+                          <div class="float-left">
+                            <h5 class="mt-0 text-dark">Frank Hendrics</h5>
+                            <span class="mail-desc text-light mt-1">Guterres was elec...</span></div>
+                          <div class="float-right text-light text-right">10.08.2018 <span class="clearfix"></span> <span class="label label-rounded label-primary">4</span> </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        </a> </div>
+                    </li>
+                    <li> <a class="nav-link text-center" href="/javascript:void(0);">See all notifications </a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- ============================================================== -->
+              <!-- End Messages -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- End mega menu -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- Profile -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown u-pro"> <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/imgs/users/user-50x50.jpg" alt="user" class="" /><span class="circle-status"></span></a>
+                <div class="dropdown-menu dropdown-menu-right animated fadeIn">
+                  <ul class="dropdown-user">
+                    <li class="text-center">
+                      <div class="dw-user-box">
+                        <div class="u-img"><img src="/assets/imgs/users/user-50x50.jpg" alt="user"></div>
+                        <div class="clearfix"></div>
+                        <div class="u-text">
+                          <h4>Mason Vox</h4>
+                          <p class="text-light"><span class="status-circle bg-success"></span>online <i class="fas fa-chevron-down small"></i></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/#"><span class="status-circle bg-success"></span> online</a></li>
+                    <li><a href="/#"><span class="status-circle bg-warning"></span> away</a></li>
+                    <li><a href="/#"><span class="status-circle bg-danger"></span> not disturb</a></li>
+                    <li><a href="/#"><span class="status-circle bg-light"></span> offline</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/#"><i class="fas fa-user mr-1"></i> My Profile</a></li>
+                    <li><a href="/#"><i class="fas fa-cog mr-1"></i> Settings</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/#"><i class="fas fa-sign-in-alt mr-1"></i> Logout</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
         </div>
+      </nav>
     </div>
-</body>
+  </header>
+  <!-- ============================================================== -->
+  <!-- End Topbar header -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Left Sidebar - style you can find in sidebar.scss  -->
+  <!-- ============================================================== -->
+  <div class="container">
+    <aside class="left-sidebar">
+      <ul class="nav-bar navbar-inverse">
+        <li class="nav-item"> <a class="nav-link navbar-toggler sidebartoggler hidden-sm-down waves-effect waves-dark float-right" href="/javascript:void(0)"><span class="navbar-toggler-icon"></span></a> </li>
+      </ul>
+      <!-- Sidebar scroll-->
+      <div class="scroll-sidebar">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li class="clearfix"></li>
+            <li> <a class="has-arrow waves-effect waves-dark" href="/#" aria-expanded="false"><i class="flaticon-desktop-computer-screen-with-rising-graph"></i><span class="hide-menu">Inicio</span></a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="/#">Proyectos</a></li>
+                <li><a href="/#">Actividad Usuarios</a></li>
+                <li><a href="/#">Analytics</a></li>
+              </ul>
+            </li>
+            <li><a href="/calendar.html"><i class="flaticon-calendar"></i><span class="hide-menu">Calendario</span></a></li>
+            <li> <a class="has-arrow waves-effect waves-dark" href="/#" aria-expanded="false"><i class="flaticon-restaurant"></i><span class="hide-menu">Proyectos</span></a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="/8_0_nuevoproyecto.html">Nuevo Proyecto</a></li>
+                <li><a href="/8_1_listadoproyectos.html">Listado de Proyectos</a></li>
+              </ul>
+            </li>
+            <li> <a class="has-arrow waves-effect waves-dark" href="/#" aria-expanded="false"><i class="flaticon-switch"></i><span class="hide-menu">Usuarios</span></a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="/ui-profile.html">Crear usuario</a></li>
+                <li><a href="/ui-typography.html">Lista de Usuarios</a></li>
+                <li><a href="/ui-buttons.html">Recuperar clave o contraseña</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    {{{body}}}
+    <!-- ============================================================== -->
+    <!-- End Info box -->
+    <!-- chart box two -->
+    <!-- ============================================================== -->
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Page Content -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- footer -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- End footer -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- End Page wrapper  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="/plugins/vendors/jquery/jquery.min.js"></script>
+<!-- Bootstrap popper Core JavaScript -->
+<script src="/plugins/vendors/bootstrap/js/popper.min.js"></script>
+<script src="/plugins/vendors/bootstrap/js/bootstrap.min.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/plugins/vendors/ps/perfect-scrollbar.jquery.min.js"></script>
+<!--Wave Effects -->
+<script src="/assets/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="/assets/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="/assets/js/custom.min.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+<!--c3 JavaScript -->
+<script src="/plugins/vendors/d3/d3.min.js"></script>
+<script src="/plugins/vendors/c3-master/c3.min.js"></script>
+<!--jquery knob -->
+<script src="/plugins/vendors/knob/jquery.knob.js"></script>
+<!--Sparkline JavaScript -->
+<script src="/plugins/vendors/sparkline/jquery.sparkline.min.js"></script>
+<!--Morris JavaScript -->
+<script src="/plugins/vendors/raphael/raphael-min.js"></script>
+<script src="/plugins/vendors/morrisjs/morris.js"></script>
+<!-- Popup message jquery -->
+<script src="/plugins/vendors/toast-master/js/jquery.toast.js"></script>
+<!-- Tag input Jquery -->
+<script src="/plugins/vendors/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<script src="/plugins/vendors/switchery/dist/switchery.min.js"></script>
+<script>
+    $(function() {
+        // Switchery
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+        $('.js-switch').each(function() {
+            new Switchery($(this)[0], $(this).data());
+        });
+        
+    });
+    </script>
+<!-- product jquery -->
+<script src="/plugins/vendors/product-slider/product-slider.js"></script>
+<script src="/plugins/vendors/product-slider/product-slider.init.js"></script>
+<!-- jQuery file upload -->
+<script src="/plugins/vendors/dropify/dist/js/dropify.min.js"></script>
+<script>
+    $(function() {
+        // Basic
+        $('.dropify').dropify();
 
+        // Translated
+        $('.dropify-fr').dropify({
+            messages: {
+                default: 'Glissez-déposez un fichier ici ou cliquez',
+                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                remove: 'Supprimer',
+                error: 'Désolé, le fichier trop volumineux'
+            }
+        });
+
+        // Used events
+        var drEvent = $('#input-file-events').dropify();
+
+        drEvent.on('dropify.beforeClear', function(event, element) {
+            return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+        });
+
+        drEvent.on('dropify.afterClear', function(event, element) {
+            alert('File deleted');
+        });
+
+        drEvent.on('dropify.errors', function(event, element) {
+            console.log('Has Errors');
+        });
+
+        var drDestroy = $('#input-file-to-destroy').dropify();
+        drDestroy = drDestroy.data('dropify')
+        $('#toggleDropify').on('click', function(e) {
+            e.preventDefault();
+            if (drDestroy.isDropified()) {
+                drDestroy.destroy();
+            } else {
+                drDestroy.init();
+            }
+        })
+    });
+    </script>
+<!-- ============================================================== -->
+<!-- Style switcher -->
+<!-- ============================================================== -->
+<script src="/plugins/vendors/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+
+
+<!-- ============================================================== -->
+<!-- FIREBASE -->
+<!-- ============================================================== -->
+
+<!-- SDK -->
+<script src="/https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="/https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script src="/https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+<script src="/https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+<!-- Coneccion Firebase -->
+<script src="/js/Firebase/A/firebaseconection.js"></script>
+
+<!-- Observador -->
+<script src="/js/Firebase/firebaseobservador.js"></script>
+
+<!-- Acceder  o crear usuario -->
+<script src="/js/Firebase/firebaseacceder.js"></script>
+
+<!-- Crear nuevo proyecto -->
+<script async="async" src="/js/Firebase/G/firebasenewproject.js"></script>
+
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+
+
+
+
+</body>
 </html>

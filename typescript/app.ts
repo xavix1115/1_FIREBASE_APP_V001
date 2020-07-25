@@ -15,6 +15,12 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs');
 
 
+//°°°°°°°°°° STATIC FILES °°°°°°°°°°//
+app.use(express.static(path.join(__dirname, 'views/public')));
+
+
+
+
 //°°°°°°°°°° MIDDLEWARES °°°°°°°°°°//
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
@@ -28,10 +34,6 @@ app.use(require('./modules/1_1_index/1_index'));
 app.use(require('./modules/4_1_login/1_login'));
 
 
-
-
-//°°°°°°°°°° STATIC FILES °°°°°°°°°°//
-app.use(express.static(path.join(__dirname, 'views/public')));
 
 
 

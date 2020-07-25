@@ -14,6 +14,7 @@ app.engine('.hbs', exphbs({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
+app.use(express.static(path.join(__dirname, 'views/public')));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.get('/bienvenidos', function (req, res) {
@@ -21,6 +22,5 @@ app.get('/bienvenidos', function (req, res) {
 });
 app.use(require('./modules/1_1_index/1_index'));
 app.use(require('./modules/4_1_login/1_login'));
-app.use(express.static(path.join(__dirname, 'views/public')));
 module.exports = app;
 console.log('app.js funcionando');
